@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Wilmex – skup złomu w rejonie Świebodzina. Oferujemy najwyższe ceny za złom. Szybka obsługa, rzetelne wyceny i możliwość odbioru złomu od klienta.">
+    <meta name="author" content="webeb">
+    <title>WILMEX - skup złomu, usługi ślusarsko - spawalnicze, obróbka cieplna</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <script src="mainv1.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-left"></div>
+            <a href="strona-glowna.html" class="link logo"><img src="img/logo.svg" alt="logo"></a>
+            <div class="menu-open"><span class="material-symbols-outlined">menu</span></div>
+             <div class="menu-close"><span class="material-symbols-outlined">close</span></div>
+        </div>  
+        <ul class="menu">
+            <li>
+                <a href="#" class="link">Skup złomu</a>
+                    <ul class="services-submenu">
+                        <li><a href="cennik-skupu.html" class="link">Cennik</a></li>
+                        <li><a href="warunki-skupu.html" class="link">Warunki skupu</a></li>
+                    </ul>
+            </li>
+            <li>
+                <a href="#" class="link">Inne usługi</a>
+                    <ul class="services-submenu">
+                        <li><a href="uslugi-slusarsko-spawalnicze.html" class="link">Usługi ślusarsko - spawalnicze</a></li>
+                        <li><a href="obrobka-cieplna.html" class="link">Obróbka cieplna, serwis, części zamienne</a></li>
+                    </ul>
+            </li>
+            <li><a href="#" class="link">Informacje</a>
+                 <ul class="services-submenu">
+                    <li><a href="informacje-prawne.html" class="link">Informacje prawne</a></li>
+                    <li><a href="kodeks.html"  class="link">Kodeks etyki i postępowania</a></li>
+                </ul>
+            </li>
+            <li><a href="kontakt.html" class="link">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="metal-container">
+            <section class="pricing-info">
+                <div class="pricing-info-left">
+                    <h4>Cennik złomu - 07.08.2025</h4>
+                        <p>Poniższy cennik nie stanowi oferty w rozumieniu art.&nbsp;66&nbsp;KC</p>
+                        <ul>
+                            <li>Wszelkie zanieczyszczenia potrącane są z ceny</li>
+                            <li>Złom przyjmujemy po wcześniejszej awizacji telefonicznej</li>
+                            <li>Możliwy odbiór odpadów złomu od klienta</li>
+                            <li>Opcje płatnośći:
+                                <ul>
+                                    <li>Gotówka</li>
+                                    <li>Przelew bankowy - wyższa cena</li>
+                                </ul>
+                            </li>
+                            <li>Ceny podlegają negocjacji</li>
+                        </ul>
+                </div>
+                <div class="pricing-info-middle">
+                    <h4>Sprawdź ile możesz dostać&nbsp;za&nbsp;złom</h4>
+                     <select id="metalSelect">
+                        <option value="">Wybierz rodzaj złomu</option>
+                        <option value="33.00">Miedź – Milbera pow. 1 mm, bez końcówek</option>
+                        <option value="32.00">Miedź – Cieńka milbera</option>
+                        <option value="31.50">Miedź – Nieświecąca, kawałek</option>
+                        <option value="30.00">Miedź – Gruba palona</option>
+                        <option value="29.50">Miedź – Niesortowana, palona</option>
+                        <option value="28.00">Miedź – Wióry, granulat suchy</option>
+                        <option value="29.00">Miedź – Pobiał</option>
+                        <option value="18.00">Miedź – Chłodnice miedziano–mosiężne</option>
+                        <option value="24.00">Miedź – Mika, preszpan, cewki</option>
+
+                        <option value="20.50">Mosiądz – Żółty, czysty MO58</option>
+                        <option value="18.00">Mosiądz – Pobiał bez Fe</option>
+                        <option value="20.00">Mosiądz – Poamortyzacyjny</option>
+                        <option value="16.20">Mosiądz – Wióry suche</option>
+                        <option value="21.00">Mosiądz – Łuski bez Fe</option>
+
+                        <option value="22.00">Brąz czysty</option>
+                        <option value="17.20">Brąz wióry</option>
+                        <option value="4.50">Ołów czysty pokablowy</option>
+                        <option value="6.30">Cynk blachy czyste</option>
+                        <option value="3.00">ZnAl</option>
+                        <option value="2.00">Gaźniki</option>
+
+                        <option value="8.50">Aluminium – Sektor</option>
+                        <option value="8.20">Aluminium – Linka bez stali</option>
+                        <option value="8.00">Aluminium – Profil biały nowy</option>
+                        <option value="7.00">Aluminium – Profil biały stary</option>
+                        <option value="7.00">Aluminium – Profil malowany nowy</option>
+                        <option value="6.50">Aluminium – Profil malowany stary</option>
+                        <option value="5.40">Aluminium – Odlewy bez Fe</option>
+                        <option value="5.00">Aluminium – Izoprofil z przekładką</option>
+                        <option value="8.00">Aluminium – Felga czysta</option>
+                        <option value="6.00">Aluminium – Felga zanieczyszczona</option>
+                        <option value="3.50">Aluminium – Wióry suche</option>
+                        <option value="4.00">Aluminium – Chłodnice czyste</option>
+                        <option value="3.00">Aluminium – Puszka</option>
+
+                        <option value="0.50">Żelazo – Cieńki</option>
+                        <option value="0.60">Żelazo – Gruby</option>
+                        <option value="0.65">Żelazo – Wsadowy</option>
+                        <option value="1.00">Nierdzewka – Gary nierdzewne</option>
+                        <option value="2.30">Nierdzewka – Wióry</option>
+                        <option value="3.20">Nierdzewka – Stal nierdzewna</option>
+
+                        <option value="100.00">Molibden czysty</option>
+                        <option value="95.00">Molibden czarny</option>
+                        <option value="45.00">Molibden wióry</option>
+                        <option value="95.00">Węglik spiekany płytki</option>
+                        <option value="96.00">Węglik spiekany frezy</option>
+                        <option value="40.00">Cyna Sn60</option>
+                    </select>
+                    <label for="wagaInput">Wpisz ilość w kg:</label>
+                    <input type="number" id="wagaInput" min="0">
+                    <p id="wynik">
+                        Szacowana wartość: 
+                        <span id="wynikKwota">0.00</span> 
+                        <span id="wynikJednostka">zł</span>
+                    </p>
+                </div>
+                <div class="pricing-info-right">
+                     <h4>Podatek PCC-3</h4>
+                     <p>Nie pomniejszamy należności z tytułu PCC-3. Podatek 2% opłaca WILMEX, klient otrzymuje pełną kwotę wynikającą z transakcji sprzedaży złomu.</p>
+                     <h4>Inne informacje</h4>
+                     <p>Odpady złomu nie ujęte w cenniku, wyceniamy po analizie.</p>
+                     <p>Nie skupujemy samochodów, akumulatorów oraz sprzętu RTV AGD.</p>
+                     <p>Skupujemy urządzenia wymienione na końcu cennika.</p>
+                </div>
+            </section>
+            <section class="metal-table">
+                <table>
+                    <colgroup>
+                        <col style="width: 80%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Miedź</th>
+                            <th>zł&nbsp;/&nbsp;kg</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Milbera pow. 1 mm, bez końcówek, świecąca, sucha</td>
+                            <td>33.00</td>
+                        </tr>
+                        <tr>
+                            <td>Cieńka milbera, płaskownik świecący</td>
+                            <td>32.00</td>
+                        </tr>
+                        <tr>
+                            <td>Nieświecaca, kawałek, trakcja, bez lutów, farby</td>
+                            <td>31.50</td>
+                        </tr>
+                        <tr>
+                            <td>Gruba palona, kawałek II, milbera tłusta</td>
+                            <td>30.00</td>
+                        </tr>
+                        <tr>
+                            <td>Niesortowana, palona</td>
+                            <td>29.50</td>
+                        </tr>
+                        <tr>
+                            <td>Wióry, granulat suchy min 95% Cu</td>
+                            <td>28.00</td>
+                        </tr>
+                        <tr>
+                            <td>Pobiał</td>
+                            <td>29.00</td>
+                        </tr>
+                        <tr>
+                            <td>Chłodnice miedziano – mosiężne bez Fe </td>
+                            <td>18.00</td>
+                        </tr>        
+                        <tr>
+                            <td>Mika, preszpan, cewki </td>
+                            <td>24.00</td>
+                        </tr>      
+                        <tr>
+                            <td style="border-radius: 0 0 0 0.5rem;">Inne</td>
+                            <td style="border-radius: 0 0 0.5rem 0;"><i class="icon-phone"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="metal-table">
+                <table>
+                    <colgroup>
+                        <col style="width: 80%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Mosiądz</th>
+                            <th>zł&nbsp;/&nbsp;kg</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Żółty, czysty, poprodukcja MO58</td>
+                            <td>20.50</td>
+                        </tr>
+                        <tr>
+                            <td>Pobiał bez Fe, plastiku, węży i grzałek</td>
+                            <td>18.00</td>
+                        </tr>
+                        <tr>
+                            <td>Żółty poamortyzacyjny bez zanieczysczeń</td>
+                            <td>20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Wióry suche</td>
+                            <td>16.20</td>
+                        </tr>
+                        <tr>
+                            <td>Łuski bez Fe </td>
+                            <td>21.00</td>
+                        </tr>
+                        <tr>
+                            <td style="border-radius: 0 0 0 0.5rem">Inne</td>
+                            <td style="border-radius: 0 0 0.5rem 0;"><i class="icon-phone"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="metal-table">
+                <table>
+                    <colgroup>
+                        <col style="width: 80%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Brąz, ołów, cynk</th>
+                            <th>zł&nbsp;/&nbsp;kg</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Brąz czysty</td>
+                            <td>22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Brąz wióry suche</td>
+                            <td>17.20</td>
+                        </tr>
+                        <tr>
+                            <td>Ołów czysty pokablowy</td>
+                            <td>4.50</td>
+                        </tr>
+                        <tr>
+                            <td>Cynk blachy czyste, bez Fe, smoły, zaprawy, itp.</td>
+                            <td>6.30</td>
+                        </tr>
+                        <tr>
+                            <td>ZnAl</td>
+                            <td>3.00</td>
+                        </tr>
+                        <tr>
+                            <td>Gaźniki</td>
+                            <td>2.00</td>
+                        </tr>
+                        <tr>
+                            <td>Inne</td>
+                            <td><i class="icon-phone"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section> 
+            <section class="metal-table">
+                <table>
+                    <colgroup>
+                        <col style="width: 80%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Aluminium</th>
+                            <th>zł&nbsp;/&nbsp;kg</th>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td>Sektor</td>
+                            <td>8.50</td>
+                        </tr>
+                        <tr>
+                            <td>Linka bez stali, sucha</td>
+                            <td>8.20</td>
+                        </tr>
+                        <tr>
+                            <td>Płaskownik energetyczny A1</td>
+                            <td><i class="icon-phone"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Profil biały do 1 m nowy</td>
+                            <td>8.00</td>
+                        </tr>
+                        <tr>
+                            <td>Profil biały do 1 m stary</td>
+                            <td>7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Profil malowany do 1 m nowy</td>
+                            <td>7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Profil malowany do 1 m stary</td>
+                            <td>6.50</td>
+                        </tr>
+                        <tr>
+                            <td>Odlewy bez Fe</td>
+                            <td>5.40</td>
+                        </tr>
+                        <tr>
+                            <td>Odlewy bez Fe zanieczyszczone</td>
+                            <td><i class="icon-phone"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Izoprofil z przekładką PCV do 1 m</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr>
+                            <td>Plastyka bez zanieczyszczeń metalicznych i niemetalicznych</td>
+                            <td>5.20</td>
+                        </tr>
+                        <tr>
+                            <td>Felga czysta, bez tulejek, wentyli, odważników, opon</td>
+                            <td>8.00</td>
+                        </tr>
+                        <tr>
+                            <td>Felga zanieczyszczona, bez opon</td>
+                            <td>6.00</td>
+                        </tr>
+                        <tr>
+                            <td>Wióry suche bez Fe</td>
+                            <td>3.50</td>
+                        </tr>
+                        <tr>
+                            <td>Chłodnice czyste bez Fe, plastiku</td>
+                            <td>4.00</td>
+                        </tr>
+                        <tr>
+                            <td>Puszka</td>
+                            <td>3.00</td>
+                        </tr>
+                        <tr>
+                            <td>Inne</td>
+                            <td><i class="icon-phone"></i></td>
+                        </tr>
+                   </tbody>
+                </table>
+            </section>
+            <section class="metal-table">
+                <table>
+                    <colgroup>
+                        <col style="width: 80%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Żelazo, Stal, Stal nierdzewna, żaroodporna</th>
+                            <th>zł&nbsp;/&nbsp;kg</th>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td>Cieńki</td>
+                            <td>0.50</td>
+                        </tr>
+                            <td>Stal nierdzewna wióry</td>
+                            <td>2.30</td>
+                        </tr>
+                        <tr>
+                            <td>Stal V4A</td>
+                            <td><i class="icon-phone"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Stal żaroodporna</td>
+                            <td><i class="icon-phone"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Inconel, nicrothal</td>
+                            <td><i class="icon-phone"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Inne</td>
+                            <td><i class="icon-phone"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Gary nierdzewne bez Fe, plastiku</td>
+                            <td>1.00</td>
+                        </tr>     <tr>
+                            <td>Gruby</td>
+                            <td>0.60</td>
+                        </tr>
+                        <tr>
+                            <td>Wsadowy poprodukcja</td>
+                            <td>0.65</td>
+                        </tr>
+                        <tr>
+                            <td>Stal nierdzewna</td>
+                            <td>3.20</td>
+                        </tr>
+                        <tr>
+                   </tbody>
+                </table>
+            </section>
+            <section class="metal-table">
+                <table>
+                    <colgroup>
+                        <col style="width: 80%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Metale Rzadkie</th>
+                            <th>zł&nbsp;/&nbsp;kg</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Molibden czysty</td>
+                            <td>100.00</td>
+                        </tr>
+                        <tr>
+                            <td>Molibden czarny</td>
+                            <td>95.00</td>
+                        </tr>
+                        <tr>
+                            <td>Molibden wióry suche</td>
+                            <td>45.00</td>
+                        </tr>
+                        <tr>
+                            <td>Węglik spiekany płytki</td>
+                            <td>95.00</td>
+                        </tr>
+                        <tr>
+                            <td>Węglik spiekany frezy</td>
+                            <td>96.00</td>
+                        </tr>
+                        <tr>
+                            <td>LS</td>
+                            <td><i class="icon-phone"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Cyna Sn60</td>
+                            <td>40.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="metal-table">
+                <table>
+                    <colgroup>
+                        <col style="width: 100%;">     
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Urządzenia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rozruszniki bez osprzętu</td>
+                        </tr>
+                        <tr>
+                            <td>Alternatory bez osprzętu</td>
+                        </tr>
+                        <tr>
+                            <td>Wirniki z rozruszników</td>
+                        </tr>
+                        <tr>
+                            <td>Wirniki z alternatorów</td>
+                        </tr>
+                        <tr>
+                            <td>Silniki elektryczne bez osprzętu</td>
+                        </tr>
+                        <tr>
+                            <td>Skrzynia biegów bez oleju</td>
+                        </tr>
+                        <tr>
+                            <td>Blok silnika Al z tulejami Fe</td>
+                        </tr>
+                        <tr>
+                            <td>Pompy ABS</td>
+                        </tr>
+                        <tr>
+                            <td>Sprężarki</td>
+                        </tr>
+                        <tr>
+                            <td>Sterowniki, bezpieczniki</td>
+                        </tr>
+                        <tr>
+                            <td>Piecyki gazowe kompletne</td>
+                        </tr>
+                        <tr>
+                            <td>Katalizatory</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        Copyright &copy; 2025 WILMEX
+        <div>Skup złomu, usługi ślusarskie i spawalnicze</div> 
+    </footer>
+
+</body>
+</html>
